@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Coding Club Theme - Light Mode */
+    --background: 0 0% 100%;
+    --foreground: 214 60% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 60% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 60% 12%;
+
+    /* Navy Blue Primary - #0B1E3F */
+    --primary: 214 60% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Gold Secondary - #D4AF37 */
+    --secondary: 43 73% 52%;
+    --secondary-foreground: 214 60% 15%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Gold Accent */
+    --accent: 43 73% 52%;
+    --accent-foreground: 214 60% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 43 73% 52%;
+
+    --radius: 0.75rem;
+
+    /* Coding Club Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 60% 15%), hsl(214 60% 25%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 73% 52%), hsl(43 73% 62%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 60% 15%), hsl(214 60% 25%), hsl(43 73% 52%));
+
+    /* Custom Shadows */
+    --shadow-glow: 0 0 40px hsla(43, 73%, 52%, 0.3);
+    --shadow-elegant: 0 10px 30px -10px hsla(214, 60%, 15%, 0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 214 60% 15%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 43 73% 52%;
+  }
+
+  .dark {
+    /* Coding Club Theme - Dark Mode */
+    --background: 214 60% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 214 60% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 214 60% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Gold Primary in Dark Mode */
+    --primary: 43 73% 52%;
+    --primary-foreground: 214 60% 6%;
+
+    /* Navy Secondary in Dark Mode */
+    --secondary: 214 60% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 214 40% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    /* Gold Accent */
+    --accent: 43 73% 52%;
+    --accent-foreground: 214 60% 6%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 40% 18%;
+    --input: 214 40% 18%;
+    --ring: 43 73% 52%;
+
+    /* Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 60% 6%), hsl(214 60% 12%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 73% 52%), hsl(43 73% 62%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 60% 6%), hsl(214 60% 12%), hsl(43 73% 52%));
+
+    /* Enhanced Shadows for Dark Mode */
+    --shadow-glow: 0 0 50px hsla(43, 73%, 52%, 0.4);
+    --shadow-elegant: 0 15px 35px -10px hsla(43, 73%, 52%, 0.2);
+
+    --sidebar-background: 214 60% 8%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 43 73% 52%;
+    --sidebar-primary-foreground: 214 60% 6%;
+    --sidebar-accent: 214 40% 12%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 214 40% 18%;
+    --sidebar-ring: 43 73% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
