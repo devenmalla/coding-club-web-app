@@ -1,6 +1,6 @@
 # 💻 Coding Club
 
-A modern web project built with **React + Vite + TypeScript** and styled using **Tailwind CSS** + **shadcn/ui**. Powered by **Supabase** for backend services.
+A modern web project built with **React + Vite** and styled using **Tailwind CSS** + **shadcn-ui**. Powered by **Supabase** for backend services.
 
 This project includes a full-featured public website (Home, Resources, Events, Gallery, Team, About) as well as an **Admin Panel** for managing content.
 
@@ -15,9 +15,8 @@ This project includes a full-featured public website (Home, Resources, Events, G
 ## 🚀 Tech Stack
 
 * ⚡ [Vite](https://vitejs.dev/) – Next-gen frontend tooling
-* 🟦 [TypeScript](https://www.typescriptlang.org/) – Safer, cleaner JavaScript
 * ⚛️ [React](https://reactjs.org/) – Component-based UI library
-* 🎨 [shadcn/ui](https://ui.shadcn.com/) – Accessible, customizable UI components
+* 🎨 [shadcn-ui](https://ui.shadcn.com/) – Accessible, customizable UI components
 * 💨 [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling
 * 🗄️ [Supabase](https://supabase.com/) – Backend (Auth, Database, Storage, APIs)
 
